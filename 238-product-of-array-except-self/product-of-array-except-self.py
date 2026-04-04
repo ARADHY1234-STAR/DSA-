@@ -8,9 +8,9 @@ class Solution(object):
             ans[i] = prefix
             prefix *= nums[i]
             
-        suffix = 1
+        postfix = 1
         for i in range(n - 1, -1, -1):
-            ans[i] *= suffix
-            suffix *= nums[i]
+            ans[i] *= postfix
+            postfix *= nums[i]
             
         return ans
